@@ -10,3 +10,5 @@ This repo showcases a project on compiling a student's test report.
   - Good student, if average is within 40 and 60
   - Very Good, if student is above 60, but below 85
   - And exceptional if average is above 85
+#### Check Score feature
+I added a check score, so the user will not input a value > 100
