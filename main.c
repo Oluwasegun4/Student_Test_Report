@@ -22,8 +22,15 @@ int main(void)
 
 	for (i = 0; i < 5; i++)
 	{
+		enter_score:
 		printf("Enter %s's score in %s: \n", std_fname, subjects[i]);
 		scanf("%f", &scores[i]);
+		if (*(scores + i) > 100)
+		{
+			printf("Invalid Score\n");
+			goto enter_score;
+		}
+	
 	}
 
 	for (j = 0; j < 5; j++)
